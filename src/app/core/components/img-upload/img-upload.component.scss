@@ -1,0 +1,18 @@
+input[type="file"] {
+  display: none;
+}
+
+label {
+  color: white;
+  height: 60px;
+  width: 250px;
+  background-color: #f5af09;
+  position: absolute;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+label > .mat-icon {
+  margin-right: 10px;
+}
