@@ -4,18 +4,23 @@ import { MedianBlurComponent } from './components/median-blur/median-blur.compon
 import { AptivThreshouldingComponent } from './components/aptiv-threshoulding/aptiv-threshoulding.component';
 import { BilaterialComponent } from './components/bilaterial/bilaterial.component';
 import { ColorQuantizationComponent } from './components/color-quantization/color-quantization.component';
-
-
+import { FormsModule } from '@angular/forms';
+import { MatInputModule } from '@angular/material/input';
+import { MatFormFieldModule } from '@angular/material/form-field';
 
 @NgModule({
   declarations: [
     MedianBlurComponent,
     AptivThreshouldingComponent,
     BilaterialComponent,
-    ColorQuantizationComponent
+    ColorQuantizationComponent,
   ],
-  imports: [
-    CommonModule
-  ]
+  imports: [CommonModule, FormsModule, MatInputModule, MatFormFieldModule],
+  exports: [
+    MedianBlurComponent,
+    AptivThreshouldingComponent,
+    BilaterialComponent,
+    ColorQuantizationComponent,
+  ],
 })
-export class FunctionsModule { }
+export class FunctionsModule {}

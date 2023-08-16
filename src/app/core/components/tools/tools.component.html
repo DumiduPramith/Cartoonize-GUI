@@ -1,0 +1,38 @@
+<div cdkDropListGroup>
+  <div cdkDropList class="example-list">
+    <div cdkDrag class="example-box d-flex align-items-center">
+      <div class="d-flex filter-left">
+        <mat-slide-toggle [(ngModel)]="medianBlur"></mat-slide-toggle>
+        <p>Median Blur</p>
+      </div>
+      <app-median-blur></app-median-blur>
+    </div>
+  </div>
+  <div cdkDropList class="example-list">
+    <div cdkDrag class="d-flex example-box align-items-center">
+      <div class="d-flex filter-left">
+        <mat-slide-toggle [(ngModel)]="bilaterial"></mat-slide-toggle>
+        <p>bilaterial filter</p>
+      </div>
+      <app-bilaterial></app-bilaterial>
+    </div>
+  </div>
+  <div cdkDropList class="example-list">
+    <div cdkDrag class="d-flex example-box align-items-center">
+      <div class="d-flex filter-left">
+        <mat-slide-toggle [(ngModel)]="adptvTreshould"></mat-slide-toggle>
+        <p>adaptive threshoulding</p>
+      </div>
+      <app-aptiv-threshoulding></app-aptiv-threshoulding>
+    </div>
+  </div>
+  <div cdkDropList class="example-list">
+    <div cdkDrag class="d-flex example-box align-items-center">
+      <div class="d-flex filter-left">
+        <mat-slide-toggle [(ngModel)]="colorQuantization"></mat-slide-toggle>
+        <p>Color Quantize</p>
+      </div>
+      <app-color-quantization></app-color-quantization>
+    </div>
+  </div>
+</div>

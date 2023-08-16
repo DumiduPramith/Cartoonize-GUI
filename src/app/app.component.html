@@ -1,4 +1,11 @@
 <app-navbar></app-navbar>
 <div class="container">
-  <app-img-upload></app-img-upload>
+  <div class="d-flex align-items-center mt-5 justify-content-center">
+    <app-img-upload class="me-5"></app-img-upload>
+    <app-tools></app-tools>
+  </div>
+  <div class="d-flex">
+    <app-img-display></app-img-display>
+    <app-img-display [spinner]="true"></app-img-display>
+  </div>
 </div>
