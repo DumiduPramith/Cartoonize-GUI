@@ -1,1 +1,7 @@
-<mat-spinner *ngIf="spinner"></mat-spinner>
+<div>
+  <div class="d-flex justify-content-center mb-3">
+    <h2>{{ title }}</h2>
+  </div>
+  <img [src]="url" *ngIf="url != ''" />
+</div>
+<mat-spinner *ngIf="spinner && isDataLoadingServer"></mat-spinner>

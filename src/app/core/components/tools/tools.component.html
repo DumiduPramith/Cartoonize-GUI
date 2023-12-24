@@ -5,7 +5,9 @@
         <mat-slide-toggle [(ngModel)]="medianBlur"></mat-slide-toggle>
         <p>Median Blur</p>
       </div>
-      <app-median-blur></app-median-blur>
+      <form [formGroup]="medianBlurForm">
+        <app-median-blur></app-median-blur>
+      </form>
     </div>
   </div>
   <div cdkDropList class="example-list">
@@ -14,7 +16,9 @@
         <mat-slide-toggle [(ngModel)]="bilaterial"></mat-slide-toggle>
         <p>bilaterial filter</p>
       </div>
-      <app-bilaterial></app-bilaterial>
+      <form [formGroup]="bilaterialForm">
+        <app-bilaterial></app-bilaterial>
+      </form>
     </div>
   </div>
   <div cdkDropList class="example-list">
@@ -23,7 +27,9 @@
         <mat-slide-toggle [(ngModel)]="adptvTreshould"></mat-slide-toggle>
         <p>adaptive threshoulding</p>
       </div>
-      <app-aptiv-threshoulding></app-aptiv-threshoulding>
+      <form [formGroup]="adptvTreshouldForm">
+        <app-aptiv-threshoulding></app-aptiv-threshoulding>
+      </form>
     </div>
   </div>
   <div cdkDropList class="example-list">
@@ -32,7 +38,12 @@
         <mat-slide-toggle [(ngModel)]="colorQuantization"></mat-slide-toggle>
         <p>Color Quantize</p>
       </div>
-      <app-color-quantization></app-color-quantization>
+      <form [formGroup]="colorQuantizationForm">
+        <app-color-quantization></app-color-quantization>
+      </form>
     </div>
+  </div>
+  <div class="d-flex justify-content-end mt-3">
+    <button mat-raised-button color="primary" class="me-3">Submit</button>
   </div>
 </div>

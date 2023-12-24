@@ -4,8 +4,8 @@
     <app-img-upload class="me-5"></app-img-upload>
     <app-tools></app-tools>
   </div>
-  <div class="d-flex">
-    <app-img-display></app-img-display>
-    <app-img-display [spinner]="true"></app-img-display>
+  <div class="d-flex justify-content-between mt-5">
+    <app-img-display [url]="url" [title]="'Original'"></app-img-display>
+    <app-img-display [spinner]="true" [title]="'Cartoonize'"></app-img-display>
   </div>
 </div>

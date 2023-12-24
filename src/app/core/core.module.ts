@@ -8,7 +8,8 @@ import { DragDropModule } from '@angular/cdk/drag-drop';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { ToolsComponent } from './components/tools/tools.component';
 import { FunctionsModule } from '../functions/functions.module';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { MatButtonModule } from '@angular/material/button';
 
 @NgModule({
   declarations: [NavbarComponent, ImgUploadComponent, ToolsComponent],
@@ -20,6 +21,8 @@ import { FormsModule } from '@angular/forms';
     MatSlideToggleModule,
     FunctionsModule,
     FormsModule,
+    MatButtonModule,
+    ReactiveFormsModule,
   ],
   exports: [NavbarComponent, ImgUploadComponent, ToolsComponent],
 })

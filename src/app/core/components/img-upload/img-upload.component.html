@@ -1,5 +1,11 @@
 <div class="d-flex">
-  <input type="file" id="img" name="img" />
+  <input
+    type="file"
+    accept=".jpg, .jpeg"
+    id="img"
+    name="img"
+    (change)="onFileSelected($event)"
+  />
   <label for="img">
     <mat-icon fontIcon="image"></mat-icon>
     Choose a Photo
